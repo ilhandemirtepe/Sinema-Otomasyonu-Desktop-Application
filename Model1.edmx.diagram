@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c581e885199f455c80b5dcb43cc33598" Name="Diagram1">
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Admin" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Bilet" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Calisan" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Film" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.FilmTur" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Musteri" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Salon" Width="1.5" PointX="7.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Satis" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.Seans" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaOtomasyonuModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Bilet_Film" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Bilet_Satis" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Satis_Calisan" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Film_FilmTur" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Seans_Film" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Satis_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaOtomasyonuModel.FK_Salon_Seans" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
