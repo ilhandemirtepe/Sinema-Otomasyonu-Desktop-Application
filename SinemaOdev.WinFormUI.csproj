@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48C56025-B824-4141-A4BE-2AB385A1B36A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SinemaOdev.WinFormUI</RootNamespace>
+    <AssemblyName>SinemaOdev.WinFormUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMusteriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMusteriForm.Designer.cs">
+      <DependentUpon>AdminMusteriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalisanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanForm.Designer.cs">
+      <DependentUpon>CalisanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilet.Designer.cs">
+      <DependentUpon>FormBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFilmislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFilmislemleri.Designer.cs">
+      <DependentUpon>FormFilmislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteri.Designer.cs">
+      <DependentUpon>FormMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriKayit.Designer.cs">
+      <DependentUpon>FormMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalon.Designer.cs">
+      <DependentUpon>FormSalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatis.Designer.cs">
+      <DependentUpon>FormSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeans.Designer.cs">
+      <DependentUpon>FormSeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciForm.Designer.cs">
+      <DependentUpon>KullaniciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullaniciislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullaniciislemleri.Designer.cs">
+      <DependentUpon>Kullaniciislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMusteriForm.resx">
+      <DependentUpon>AdminMusteriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalisanForm.resx">
+      <DependentUpon>CalisanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilet.resx">
+      <DependentUpon>FormBilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilmislemleri.resx">
+      <DependentUpon>FormFilmislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteri.resx">
+      <DependentUpon>FormMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriKayit.resx">
+      <DependentUpon>FormMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalon.resx">
+      <DependentUpon>FormSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatis.resx">
+      <DependentUpon>FormSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeans.resx">
+      <DependentUpon>FormSeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciForm.resx">
+      <DependentUpon>KullaniciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullaniciislemleri.resx">
+      <DependentUpon>Kullaniciislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SinemaOdev.DTO\SinemaOdev.DTO.csproj">
+      <Project>{91b20837-c679-480d-b1fa-d5cc9f1e437c}</Project>
+      <Name>SinemaOdev.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SinemaOdev.ORM\SinemaOdev.ORM.csproj">
+      <Project>{ec570c89-8334-4438-92b2-354263e95c9a}</Project>
+      <Name>SinemaOdev.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SinemaOdev.Service\SinemaOdev.Service.csproj">
+      <Project>{e80bd0d7-ed9b-4bb9-a9fe-a00132a27240}</Project>
+      <Name>SinemaOdev.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin-icon.png" />
+    <Content Include="adminbir.jpg" />
+    <Content Include="adminresim.jpg" />
+    <None Include="Resources\kirmizi.png" />
+    <None Include="Resources\mavi.png" />
+    <None Include="Resources\calisan.jpg" />
+    <None Include="Resources\musteriLoginResim.jpg" />
+    <None Include="Resources\adminMusteri.jpg" />
+    <None Include="Resources\adminmim.jpg" />
+    <None Include="Resources\indir.jpg" />
+    <None Include="Resources\54i6-Rideau_12_3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
